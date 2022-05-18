@@ -7,3 +7,17 @@ h2 {
     font-size: 18px;
     color:darkblue;
 }
+
+.clase_01 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clase_02 {
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid magenta;
+}
+
+.clase_03 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aquamarine;
+}
