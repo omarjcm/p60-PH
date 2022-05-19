@@ -27,3 +27,11 @@ a:active {
     color: black;
     background-color: yellow;
 }
+
+.anterior {
+    float:left;
+}
+
+.siguiente {
+    float: right;
+}
