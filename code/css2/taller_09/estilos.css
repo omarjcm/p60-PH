@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+}
+
+/* Selector de clase */
+.contenedor {
+
+}
+
+.item1, .item2, .item3 {
+    border: 1px solid black;
+    padding: 10px;
+    width: 100px;
+    float: left;
+}
+
+.item1, .item3 {
+    width: 17%;
+}
+
+.item2 {
+    width: 60%;
+}
+
+.limpiar {
+    clear: both;
+}
