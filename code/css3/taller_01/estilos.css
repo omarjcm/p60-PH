@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+}
+
+/* Selector de clase */
+.contenedor {
+    display: grid;
+    /*grid-template-columns: 20% 40% 20% 20%;*/
+    grid-template-columns: 200px 1fr 200px;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.item {
+    border: 1px solid lightgray;
+    padding: 10px;
+}

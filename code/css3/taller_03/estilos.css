@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template: 150px 1fr 50px / 150px 1fr;
+    grid-template-areas: "header header" "left content" "footer footer";
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+.left {
+    grid-area: left;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.item {
+    border: 1px solid rgb(195, 207, 22);
+}

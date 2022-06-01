@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+}
+
+/* Selector de clase */
+.contenedor {
+    display: grid;
+    /* filas / columnas */
+    grid-template: repeat(5, 1fr) / repeat(3, auto);
+    grid-gap: 5px;
+}
+
+.item {
+    border: 1px solid lightgray;
+    padding: 10px;
+}

@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.item {
+    border: 1px dotted lightblue;
+    padding: 10px;
+}
