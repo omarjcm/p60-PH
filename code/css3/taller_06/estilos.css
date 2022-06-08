@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    height: 100vh;
+}
+
+
+.item {
+    border: 1px solid rgb(195, 207, 22);
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+}
