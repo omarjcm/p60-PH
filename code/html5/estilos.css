@@ -1,9 +1,72 @@
+/*
+Basado en: https://www.freecodecamp.org/espanol/news/tutorial-de-css-flexbox-y-css-grid-como-crear-una-pagina-de-inicio-responsivo-con-html-y-css/
+*/
+
 * {
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
 
 body {
     font-family: "lato", sans-serif;
-    color: white;
+    color: black;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: visible;
+}
+
+.navbar {
+    background-color: rgba(214, 166, 10, 0.884);
+    height: 70px;
+    padding: 0 30px;
+}
+
+.navbar h1 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.navbar .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    padding: 9px;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    color: darkblue;
+    border-bottom: 3px solid darkblue;
+}
+
