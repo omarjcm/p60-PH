@@ -1,0 +1,18 @@
+.container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    top: 40px;
+    left: 10px;
+}
+
+#opcion-1 {
+    background-color: lightgreen;
+    z-index: 2;
+}
+
+#opcion-2 {
+    background-color: lightpink;
+    z-index: 1;
+}
