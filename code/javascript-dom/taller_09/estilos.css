@@ -1,0 +1,15 @@
+#cajita {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 450px;
+    height: 40px;
+    font-size: 30px;
+    border: 1px solid lightgray;
+    color: black;
+    background-color: beige;
+    text-align: center;
+    box-shadow: 5px 5px 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
