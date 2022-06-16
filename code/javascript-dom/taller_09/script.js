@@ -11,16 +11,16 @@ div_cajita.addEventListener('mousedown', function(e){
     let mouse_y = e.clientY
 
     distancia = [
-        this.offsetLeft - e.clientX,
-        this.offsetTop - e.clientY,
+        e.clientX - this.offsetLeft,
+        e.clientY - this.offsetTop,
     ]
 
 })
 
 div_cajita.addEventListener('mousemove', function(e){
     if (es_presionada) {
-        div_cajita.style.left = (e.clientX + distancia[0]) + 'px'
-        div_cajita.style.top = (e.clientY + distancia[1]) + 'px'
+        div_cajita.style.left = (e.clientX - distancia[0]) + 'px'
+        div_cajita.style.top = (e.clientY - distancia[1]) + 'px'
     }   
 })
 
