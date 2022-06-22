@@ -14,7 +14,6 @@ div_cajita.addEventListener('mousedown', function(e){
         e.clientX - this.offsetLeft,
         e.clientY - this.offsetTop,
     ]
-
 })
 
 div_cajita.addEventListener('mousemove', function(e){
