@@ -44,3 +44,4 @@ console.log(typeof persona)
 persona.nombre = 'Guillermo Omar'
 console.log(persona)
 console.log( persona.nombre.length )
+
