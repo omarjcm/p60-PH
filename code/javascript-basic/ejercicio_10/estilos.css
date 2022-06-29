@@ -1,0 +1,17 @@
+#documento {
+}
+
+.personaje {
+    border-radius: 3px;
+    border: 1px solid black;
+    float: left;
+    margin: 10px;
+}
+
+.personaje img {
+    width: 100px;
+}
+
+.personaje h1 {
+    font-size: 12px;
+}
