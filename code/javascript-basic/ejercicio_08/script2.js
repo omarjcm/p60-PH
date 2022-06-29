@@ -10,6 +10,6 @@ var texto = 'Coca Cola'
 console.log(texto)
 
 let a = 'Vaso'
-let a = 'Jarra'
+//let a = 'Jarra'
 
 console.log(a)

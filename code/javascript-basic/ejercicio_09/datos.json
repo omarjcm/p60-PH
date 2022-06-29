@@ -1,0 +1,4 @@
+{"articulos": [
+    { "nombre": "Bicicleta", "modelo": "BMX", "color": "Azul", "costo": 150 },
+    { "nombre": "Bicicleta", "modelo": "Free", "color": "White", "costo": 250 }
+]}
