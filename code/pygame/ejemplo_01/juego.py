@@ -26,9 +26,9 @@ class Juego:
             elif self.teclado[pg.K_RIGHT]:
                 self.nave.x += 2
             elif self.teclado[pg.K_UP]:
-                self.nave.y += 2
-            elif self.teclado[pg.K_DOWN]:
                 self.nave.y -= 2
+            elif self.teclado[pg.K_DOWN]:
+                self.nave.y += 2
 
             for evento in pg.event.get():
                 if evento.type == pg.QUIT:
