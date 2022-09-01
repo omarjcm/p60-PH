@@ -1,5 +1,9 @@
 import pygame as pg
 
+'''
+Basado en: https://github.com/janjilecek/pygame-invaders/blob/master/main.py
+'''
+
 class Juego:
     def __init__(self, ancho, alto, color):
         self.ancho = ancho
