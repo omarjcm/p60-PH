@@ -7,5 +7,5 @@ class Rayo:
         self.y = y
 
     def dibujar(self):
-        pg.draw.rect(self.ventana, (210, 250, 251), pg.Rect(self.x, self.y, 15, 10))
+        pg.draw.rect(self.ventana, (210, 250, 251), pg.Rect(self.x, self.y, 5, 8))
         self.y -= 2

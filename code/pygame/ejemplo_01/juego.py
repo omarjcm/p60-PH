@@ -28,7 +28,9 @@ class Juego:
         self.generar_aliens()
 
         while not self.jugando:
-
+            if len(self.aliens) == 0:
+                self.mensaje_ganador()
+                
             self.teclado = pg.key.get_pressed()
 
             if self.teclado[pg.K_LEFT]:
@@ -51,13 +53,19 @@ class Juego:
 
             for alien in self.aliens:
                 alien.dibujar()
+                alien.verificar_colision()
 
             self.nave.dibujar()
 
+    def mensaje_ganador(self):
+        pg.font.init()
+        fuente = pg.font.SysFont('Arial', 50)
+        texto = fuente.render('Ganaste!!', False, (250, 250, 250))
+        self.ventana.blit(texto, (110, 160))
 
     def generar_aliens(self):
         margen = 20
         tamanio_alien = 20
         for x in range(margen, self.ancho-margen, tamanio_alien+5):
             for y in range(margen, int(self.alto/2), tamanio_alien+5):
-                self.aliens.append( Alien(self.ventana, x, y, tamanio_alien) )
+                self.aliens.append( Alien(self, x, y, tamanio_alien) )
