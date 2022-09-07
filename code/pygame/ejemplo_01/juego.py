@@ -1,4 +1,5 @@
 import pygame as pg
+from rayo import Rayo
 from nave import Nave
 from alien import Alien
 
@@ -11,6 +12,8 @@ class Juego:
         self.ancho = ancho
         self.alto = alto
         self.color = color
+
+        self.rayos = []
 
         self.aliens = []
         self.num_aliens_horizontal = 50
@@ -36,10 +39,15 @@ class Juego:
             for evento in pg.event.get():
                 if evento.type == pg.QUIT:
                     self.jugando = True
+                if evento.type == pg.KEYDOWN and evento.key == pg.K_SPACE:
+                    self.rayos.append( Rayo(self.ventana, self.nave.x, self.nave.y) )
 
             pg.display.flip()
             self.reloj.tick(60)
             self.ventana.fill( self.color )
+
+            for rayo in self.rayos:
+                rayo.dibujar()
 
             for alien in self.aliens:
                 alien.dibujar()
