@@ -1,8 +1,11 @@
 import pygame as pg
+from jugador import Nave, Rayo
 
 class Juego:
     def __init__(self, ancho, alto):
         pg.init()
+
+        self.rayos = []
 
         self.ventana_ancho = ancho
         self.ventana_alto = alto
@@ -13,9 +16,20 @@ class Juego:
 
         self.fondo = pg.image.load('./images/background.jpg')
 
+        self.jugador_grupo = pg.sprite.Group()
+        self.jugador = Nave(self, int(self.ventana_ancho/2), self.ventana_alto-100)
+        self.jugador_grupo.add( self.jugador )
+
+        self.rayos = pg.sprite.Group()
+
         self.finaliza_juego = False
         while not self.finaliza_juego:
             self.ventana.blit( self.fondo, (0,0) )
+
+            self.jugador.update()
+
+            self.jugador_grupo.draw( self.ventana )
+            self.rayos.draw( self.ventana )
 
             for event in pg.event.get():
                 if event.type == pg.QUIT:
