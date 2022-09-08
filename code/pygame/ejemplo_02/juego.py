@@ -27,6 +27,7 @@ class Juego:
             self.ventana.blit( self.fondo, (0,0) )
 
             self.jugador.update()
+            self.rayos.update()
 
             self.jugador_grupo.draw( self.ventana )
             self.rayos.draw( self.ventana )
@@ -34,7 +35,10 @@ class Juego:
             for event in pg.event.get():
                 if event.type == pg.QUIT:
                     self.finaliza_juego = True
-                
+                if event.type == pg.KEYDOWN and event.key == pg.K_SPACE:
+                    rayo = Rayo(self.jugador.rect.centerx, self.jugador.rect.top)
+                    self.rayos.add( rayo )
+               
             pg.display.update()
             self.tiempo.tick(60)
 

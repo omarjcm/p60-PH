@@ -17,9 +17,6 @@ class Nave(pg.sprite.Sprite):
             self.rect.x -= self.velocidad
         if self.teclado[pg.K_RIGHT] and self.rect.right < self.juego.ventana_ancho:
             self.rect.x += self.velocidad
-        if self.teclado[pg.K_SPACE]:
-            rayo = Rayo(self.rect.centerx, self.rect.top)
-            self.juego.rayos.add( rayo )
 
 
 class Rayo(pg.sprite.Sprite):
